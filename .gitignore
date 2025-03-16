@@ -1,0 +1,32 @@
+# Diretório de cache do Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Arquivos de estado do Terraform (contêm dados sensíveis)
+terraform.tfstate
+terraform.tfstate.*
+*.tfstate.backup
+
+# Arquivos de plano do Terraform
+*.tfplan
+*.plan
+
+# Arquivos de variáveis sensíveis
+*.tfvars
+*.tfvars.json
+credentials.json
+
+# Logs e arquivos temporários
+.crash.log
+*.log
+*.backup
+*.swp
+*.swo
+
+# Ignorar arquivos do editor (VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+*.DS_Store
+
+#Chave
+keys/

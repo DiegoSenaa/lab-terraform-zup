@@ -1,0 +1,15 @@
+{
+    "bindings": [
+      {
+        "role": "roles/viewer",
+        "members": [
+          "serviceAccount:${nome}@your-project-id.iam.gserviceaccount.com"
+        ],
+        "condition": {
+          "title": "API Access",
+          "description": "Grants access to ${endpoint}",
+          "expression": "resource.name.endsWith('${endpoint}')"
+        }
+      }
+    ]
+  }
